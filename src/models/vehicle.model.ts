@@ -2,6 +2,24 @@ const mongoose = require("mongoose");
 
 const vehicleSchema = new mongoose.Schema(
   {
+    brand: {
+      type: String,
+    },
+    model: {
+      type: String,
+    },
+    plateNumber: {
+      type: String,
+    },
+    condition: {
+      type: String,
+    },
+    dailyPrice: {
+      type: Number,
+    },
+    available: {
+      type: Boolean,
+    },
     type: {
       type: String,
     },
@@ -11,4 +29,7 @@ const vehicleSchema = new mongoose.Schema(
   }
 );
 
-module.exports.VehicleModel = mongoose.model("Vehicle", vehicleSchema);
+const vehicleModel = mongoose.model("Vehicle", vehicleSchema);
+module.exports = vehicleModel;
+
+export { };

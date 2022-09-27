@@ -1,6 +1,2 @@
 POST  http://localhost:3001/api/vehicle
 Content-Type: application/json
-
-{
-    "type": "love",
-}

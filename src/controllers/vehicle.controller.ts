@@ -1,20 +1,32 @@
+
 import { Request, Response } from "express";
+import { Error } from "mongoose";
 
 const Vehicle = require("../models/vehicle.model");
 
-module.exports.createVehicle = async (request: Request, response: Response) => {
-  const body = request.body;
+module.exports.createVehicle = (request: Request, response: Response) => {
 
   const vehicle = new Vehicle({
-    title: body.type || "",
+    model: request.body.model || "",
+    brand: request.body.brand || "",
+    plateNumber: request.body.plateNumber || "",
+    condition: request.body.condition || "",
+    dailyPrice: request.body.dailyPrice || 0,
+    available: request.body.available || true,
+    type: request.body.type || "",
   });
 
-  const savedVehicle = await vehicle.save();
+  Vehicle.create(vehicle, (err: Error, data: any) => {
+    if (err) {
+      response.status(500).send(err);
+    } else {
+      response.send(data);
+    }
+  })
 
-  response.status(201).json(savedVehicle);
 };
 
 module.exports.getVehicles = async (request: Request, response: Response) => {
   const vehicles = await Vehicle.find({});
-  response.json(vehicles);
+  response.send(vehicles);
 };

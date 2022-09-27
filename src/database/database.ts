@@ -2,4 +2,4 @@ enum Database {
   MongoDB = "MongoDB"
 }
 
-export default Database;
+module.exports = Database;

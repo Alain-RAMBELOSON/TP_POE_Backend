@@ -1,7 +1,5 @@
-
-import * as mongoose from "mongoose";
-import Database from "./database";
-
+const mongoose = require("mongoose");
+const Database = require("./database");
 const config = require("./config");
 
 const success = (database: String) => {
