@@ -1,0 +1,1 @@
+DELETE http://localhost:3001/api/vehicle/63333e7168b474527f0f33be

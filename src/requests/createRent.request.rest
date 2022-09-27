@@ -1,0 +1,6 @@
+POST  http://localhost:3001/api/rent
+Content-Type: application/json
+
+{
+  "clientID" : "1234"
+}

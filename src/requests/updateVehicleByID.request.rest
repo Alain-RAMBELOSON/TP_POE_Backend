@@ -1,0 +1,6 @@
+PUT  http://localhost:3001/api/vehicle/6333415b32db42b7dfa0d788
+Content-Type: application/json
+
+{
+    "brand": "machine"
+}
