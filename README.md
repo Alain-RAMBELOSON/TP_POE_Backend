@@ -22,15 +22,15 @@ The technologies used is up to the student.
 - Create comprehensive pre-production documentation ( Entity Relationship Diagram, use cases, browser and mobile wireframes )
 - Maintainable, extensible and intelligible folder and file architecture
 - Use the minimum number of external packages possible
+- Don't violate the previous principles
 
 # Description
 
-Backend server built with Express and MongoDB designed to work with the frontend application `TP_POE_Frontend` available at https://github.com/Alain-RAMBELOSON/TP_POE_Frontend
-
+Backend server built with Express and MongoDB designed to work with the frontend application `TP_POE_Frontend` from https://github.com/Alain-RAMBELOSON/TP_POE_Frontend
 
 # Usage
 
-### Run the server
+### Run the backend server
 
 - Download or clone this repository
 - Open a terminal at the root of this repository  
