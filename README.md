@@ -8,7 +8,7 @@ Wording provided by [Semifir](https://fr.linkedin.com/company/semifir).
 ### Requirements
 
 The goal is to develop a web application from scratch for a fictive car renting company in a week.  
-The technologies used is up to the student.
+The technologies used are up to the student.
 
 - Create a vehicle which has a daily rent
 - Create a customer
