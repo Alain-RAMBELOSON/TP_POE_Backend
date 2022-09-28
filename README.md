@@ -50,29 +50,38 @@ Run the frontend application [TP_POE_Frontend](https://github.com/Alain-RAMBELOS
 
 # API
 
-## Tables
+## Table names
 
 - vehicle
 - customer
 - rent
 
 ## Routes
+
+Replace `<ServerAddress>` by your server address. To test this repository the recommended address is `http://localhost`.  
+Replace `<TableName>` by one of the provided table name above. 
+
+For example, to get a vehicule by its ID, your URL should look like the following
+```
+http://localhost:3001/api/vehicle/4334efb3d817s5ab8fe4bc28
+```
+
 ### Create a record  
 Use the POST method from  
-`\<server\>/api/\<table\>`
+`<ServerAddress>:3001/api/<TableName>`
 
 ### Get all records
 Use the GET method from   
-`\<server\>/api/\<table\>`
+`<ServerAddress>:3001/api/<TableName>`
 
 ### Get a record by ID
 Use the GET method from  
-`\<server\>/api/\<table\>/:id`
+`<ServerAddress>:3001/api/<TableName>/:id`
 
 ### Update a record by ID
 Use the PUT method from  
-`\<server\>/api/\<table\>/:id`
+`<ServerAddress>:3001/api/<TableName>/:id`
 
 ### Delete a record by ID
 Use the DELETE method from  
-`\<server\>/api/\<table\>/:id`
+`<ServerAddress>:3001/api/<TableName>/:id`
