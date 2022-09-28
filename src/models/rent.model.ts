@@ -3,19 +3,24 @@ const mongoose = require("mongoose");
 const rentSchema = new mongoose.Schema(
   {
     clientID: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Client",
     },
     vehicleID: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Vehicle",
     },
     start: {
       type: String,
+      required: true,
     },
     end: {
       type: String,
+      required: true,
     },
     price: {
       type: Number,
+      required: true,
     },
   },
   {

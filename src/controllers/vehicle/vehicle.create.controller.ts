@@ -10,7 +10,7 @@ module.exports.createVehicle = (request: Request, response: Response) => {
     brand: request.body.brand || "",
     plateNumber: request.body.plateNumber || "",
     condition: request.body.condition || "",
-    dailyPrice: request.body.dailyPrice || 0,
+    dailyRent: request.body.dailyRent || 0,
     available: request.body.available || true,
     type: request.body.type || "",
   });

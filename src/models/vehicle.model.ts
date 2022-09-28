@@ -4,17 +4,28 @@ const vehicleSchema = new mongoose.Schema(
   {
     brand: {
       type: String,
+      trim: true,
+      minLength: 3,
+      maxLength: 50,
     },
     model: {
       type: String,
+      trim: true,
+      minLength: 3,
+      maxLength: 50,
     },
     plateNumber: {
       type: String,
+      required: true,
+      unique: true,
+      trim: true,
+      minLength: 5,
+      maxLength: 50,
     },
     condition: {
       type: String,
     },
-    dailyPrice: {
+    dailyRent: {
       type: Number,
     },
     available: {
@@ -22,6 +33,9 @@ const vehicleSchema = new mongoose.Schema(
     },
     type: {
       type: String,
+      trim: true,
+      minLength: 3,
+      maxLength: 50,
     },
   },
   {

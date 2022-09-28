@@ -11,7 +11,7 @@ module.exports.updateVehicleByID = async (request: Request, response: Response) 
     brand: request.body.brand,
     plateNumber: request.body.plateNumber,
     condition: request.body.condition,
-    dailyPrice: request.body.dailyPrice,
+    dailyRent: request.body.dailyRent,
     available: request.body.available,
     type: request.body.type,
   }
