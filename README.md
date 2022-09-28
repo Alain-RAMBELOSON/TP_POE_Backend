@@ -26,7 +26,7 @@ The technologies used is up to the student.
 
 # Description
 
-Backend server built with Express and MongoDB designed to work with the frontend application `TP_POE_Frontend` from https://github.com/Alain-RAMBELOSON/TP_POE_Frontend
+Backend server built with Express and MongoDB designed to work with the frontend application [TP_POE_Frontend](https://github.com/Alain-RAMBELOSON/TP_POE_Frontend).
 
 # Usage
 
@@ -46,7 +46,7 @@ Open the `requests` folder, open a `*.rest` file and click on the `Send request`
 
 ### Run the frontend application
 
-Get and run the frontend application from https://github.com/Alain-RAMBELOSON/TP_POE_Frontend 
+Run the frontend application [TP_POE_Frontend](https://github.com/Alain-RAMBELOSON/TP_POE_Frontend).
 
 # API
 
