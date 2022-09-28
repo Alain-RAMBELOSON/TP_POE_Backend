@@ -41,6 +41,8 @@ Backend server built with Express and MongoDB designed to work with the frontend
 ### For developers
 
 - Run the `npm run dev` command at the root of the repository to get live updates on file changes
+- With [Visual Studio Code](https://code.visualstudio.com/download) and the [Rest client](https://github.com/Huachao/vscode-restclient) extension you can launch requests to the database.  
+Open the `requests` folder, open a `*.rest` file and click on the `Send request` command which appears at the top left corner of the displayed document. 
 
 ### Run the frontend application
 
