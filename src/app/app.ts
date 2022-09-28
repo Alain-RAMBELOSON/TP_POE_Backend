@@ -5,7 +5,7 @@ const vehicleRouter = require("../routes/vehicle.routes");
 const clientRouter = require("../routes/client.routes");
 const rentRouter = require("../routes/rent.routes");
 
-export const app = express();
+const app = express();
 
 connector.connect(Database.MongoDB);
 
@@ -16,3 +16,5 @@ app.use("/api/client", clientRouter);
 app.use("/api/rent", rentRouter);
 
 module.exports = app;
+
+export { }

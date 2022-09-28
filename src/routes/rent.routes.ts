@@ -1,10 +1,13 @@
 const rentRouter = require("express").Router();
-const rentController = require("../controllers/rent.controller");
+const rentCreateController = require("../controllers/rent/rent.create.controller");
+const rentReadController = require("../controllers/rent/rent.read.controller");
+const rentUpdateController = require("../controllers/rent/rent.update.controller");
+const rentDeleteController = require("../controllers/rent/rent.delete.controller");
 
-rentRouter.post("/", rentController.createRent);
-rentRouter.get("/", rentController.getRents);
-rentRouter.get("/:id", rentController.getRentByID);
-rentRouter.put("/:id", rentController.updateRentByID);
-rentRouter.delete("/:id", rentController.deleteRentByID);
+rentRouter.post("/", rentCreateController.createRent);
+rentRouter.get("/", rentReadController.getRents);
+rentRouter.get("/:id", rentReadController.getRentByID);
+rentRouter.put("/:id", rentUpdateController.updateRentByID);
+rentRouter.delete("/:id", rentDeleteController.deleteRentByID);
 
 module.exports = rentRouter;

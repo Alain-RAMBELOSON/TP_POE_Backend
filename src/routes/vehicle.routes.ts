@@ -1,10 +1,13 @@
 const vehicleRouter = require("express").Router();
-const vehicleController = require("../controllers/vehicle.controller");
+const vehicleCreateController = require("../controllers/vehicle/vehicle.create.controller");
+const vehicleReadController = require("../controllers/vehicle/vehicle.read.controller");
+const vehicleUpdateController = require("../controllers/vehicle/vehicle.update.controller");
+const vehicleDeleteController = require("../controllers/vehicle/vehicle.delete.controller");
 
-vehicleRouter.post("/", vehicleController.createVehicle);
-vehicleRouter.get("/", vehicleController.getVehicles);
-vehicleRouter.get("/:id", vehicleController.getVehicleByID);
-vehicleRouter.put("/:id", vehicleController.updateVehicleByID);
-vehicleRouter.delete("/:id", vehicleController.deleteVehicleByID);
+vehicleRouter.post("/", vehicleCreateController.createVehicle);
+vehicleRouter.get("/", vehicleReadController.getVehicles);
+vehicleRouter.get("/:id", vehicleReadController.getVehicleByID);
+vehicleRouter.put("/:id", vehicleUpdateController.updateVehicleByID);
+vehicleRouter.delete("/:id", vehicleDeleteController.deleteVehicleByID);
 
 module.exports = vehicleRouter;
