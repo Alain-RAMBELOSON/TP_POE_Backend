@@ -2,5 +2,5 @@ PUT  http://localhost:3001/api/rent/63334be50d8bf9d957f88b0f
 Content-Type: application/json
 
 {
-  "clientID": "Piou"
+  "customerID": "Piou"
 }

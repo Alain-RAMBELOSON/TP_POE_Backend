@@ -2,13 +2,15 @@ const mongoose = require("mongoose");
 
 const rentSchema = new mongoose.Schema(
   {
-    clientID: {
+    customerID: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Client",
+      ref: "Customer",
+      required: true,
     },
     vehicleID: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Vehicle",
+      required: true,
     },
     start: {
       type: String,

@@ -1,20 +1,18 @@
 const mongoose = require("mongoose");
 const { isEmail } = require("validator");
 
-const clientSchema = new mongoose.Schema(
+const customerSchema = new mongoose.Schema(
   {
     firstName: {
       type: String,
       required: true,
       trim: true,
-      minLength: 3,
       maxLength: 50,
     },
     lastName: {
       type: String,
       required: true,
       trim: true,
-      minLength: 3,
       maxLength: 50,
     },
     birthDate: {
@@ -37,7 +35,7 @@ const clientSchema = new mongoose.Schema(
   }
 );
 
-const clientModel = mongoose.model("Client", clientSchema);
-module.exports = clientModel;
+const customerModel = mongoose.model("Customer", customerSchema);
+module.exports = customerModel;
 
 export { };

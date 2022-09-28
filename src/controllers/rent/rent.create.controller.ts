@@ -5,11 +5,11 @@ const Rent = require("../../models/rent.model");
 
 module.exports.createRent = (request: Request, response: Response) => {
   const rent = new Rent({
-    clientID: request.body.clientID || "",
-    vehicleID: request.body.vehicleID || "",
-    start: request.body.start || "",
-    end: request.body.end || "",
-    price: request.body.price || "",
+    customerID: request.body.customerID,
+    vehicleID: request.body.vehicleID,
+    start: request.body.start,
+    end: request.body.end,
+    price: request.body.price,
   });
 
   Rent.create(rent, (error: Error, rent: Response) => {

@@ -1,1 +1,0 @@
-GET http://localhost:3001/api/client/633342cc792931ca0b5a4a23

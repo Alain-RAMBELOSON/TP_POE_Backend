@@ -7,7 +7,7 @@ module.exports.updateRentByID = async (request: Request, response: Response) => 
   const rentID = request.params.id
 
   const update = {
-    clientID: request.body.clientID,
+    customerID: request.body.customerID,
     vehicleID: request.body.vehicleID,
     start: request.body.start,
     end: request.body.end,

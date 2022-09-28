@@ -2,5 +2,9 @@ POST  http://localhost:3001/api/rent
 Content-Type: application/json
 
 {
-  "clientID" : "1234"
+  "customerID": "63340acc7b9e3b0f3718c502",
+  "vehicleID": "63340c1383ee63e889fe5caa",
+  "start": "a",
+  "end": "a",
+  "price": 0
 }
