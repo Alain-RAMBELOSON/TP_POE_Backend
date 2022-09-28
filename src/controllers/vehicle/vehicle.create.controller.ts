@@ -4,7 +4,6 @@ import { Error } from "mongoose";
 const Vehicle = require("../../models/vehicle.model");
 
 module.exports.createVehicle = (request: Request, response: Response) => {
-
   const vehicle = new Vehicle({
     model: request.body.model || "",
     brand: request.body.brand || "",
@@ -21,6 +20,5 @@ module.exports.createVehicle = (request: Request, response: Response) => {
     } else {
       response.send(vehicle);
     }
-  })
-
+  });
 };

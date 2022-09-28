@@ -1,5 +1,5 @@
 enum Database {
-  MongoDB = "MongoDB"
+  MongoDB = "MongoDB",
 }
 
 module.exports = Database;

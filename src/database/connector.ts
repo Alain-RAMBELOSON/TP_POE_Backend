@@ -13,8 +13,7 @@ const error = (database: String, error: any) => {
 export const connect = (database: String) => {
   if (database === Database.MongoDB) {
     mongoose
-      .connect(config.MONGODB_SERVER_URL, {
-      })
+      .connect(config.MONGODB_SERVER_URL, {})
       .then(() => {
         success(Database.MongoDB);
       })

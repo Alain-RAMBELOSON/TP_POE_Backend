@@ -2,9 +2,11 @@ import { Request, Response } from "express";
 
 const Vehicle = require("../../models/vehicle.model");
 
-module.exports.updateVehicleByID = async (request: Request, response: Response) => {
-
-  const vehicleID = request.params.id
+module.exports.updateVehicleByID = async (
+  request: Request,
+  response: Response
+) => {
+  const vehicleID = request.params.id;
 
   const update = {
     model: request.body.model,
@@ -14,14 +16,15 @@ module.exports.updateVehicleByID = async (request: Request, response: Response) 
     dailyRent: request.body.dailyRent,
     available: request.body.available,
     type: request.body.type,
-  }
+  };
 
-  const vehicle = await Vehicle.findByIdAndUpdate(vehicleID, update, { new: true });
+  const vehicle = await Vehicle.findByIdAndUpdate(vehicleID, update, {
+    new: true,
+  });
 
   if (vehicle) {
     response.json(vehicle);
   } else {
     response.status(400);
   }
-
 };

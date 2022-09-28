@@ -18,5 +18,5 @@ module.exports.createRent = (request: Request, response: Response) => {
     } else {
       response.send(rent);
     }
-  })
+  });
 };

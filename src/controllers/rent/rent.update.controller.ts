@@ -2,9 +2,11 @@ import { Request, Response } from "express";
 
 const Rent = require("../../models/rent.model");
 
-module.exports.updateRentByID = async (request: Request, response: Response) => {
-
-  const rentID = request.params.id
+module.exports.updateRentByID = async (
+  request: Request,
+  response: Response
+) => {
+  const rentID = request.params.id;
 
   const update = {
     customerID: request.body.customerID,
@@ -12,7 +14,7 @@ module.exports.updateRentByID = async (request: Request, response: Response) => 
     start: request.body.start,
     end: request.body.end,
     price: request.body.price,
-  }
+  };
 
   const rent = await Rent.findByIdAndUpdate(rentID, update, { new: true });
 
@@ -21,5 +23,4 @@ module.exports.updateRentByID = async (request: Request, response: Response) => 
   } else {
     response.status(400);
   }
-
 };

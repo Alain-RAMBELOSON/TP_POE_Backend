@@ -18,5 +18,5 @@ module.exports.createCustomer = (request: Request, response: Response) => {
     } else {
       response.send(customer);
     }
-  })
+  });
 };

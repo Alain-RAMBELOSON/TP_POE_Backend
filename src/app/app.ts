@@ -17,4 +17,4 @@ app.use("/api/rent", rentRouter);
 
 module.exports = app;
 
-export { }
+export {};

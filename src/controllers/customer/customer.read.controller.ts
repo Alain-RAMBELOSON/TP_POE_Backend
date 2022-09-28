@@ -7,7 +7,10 @@ module.exports.getCustomers = async (request: Request, response: Response) => {
   response.send(customers);
 };
 
-module.exports.getCustomerByID = async (request: Request, response: Response) => {
+module.exports.getCustomerByID = async (
+  request: Request,
+  response: Response
+) => {
   const customerID = request.params.id;
   const customer = await Customer.findById(customerID);
   response.send(customer);
