@@ -1,9 +1,10 @@
+const config = require("../config");
 const httpProtocol = require("http");
 const app = require("../app/app");
-const config = require("./config");
 
 const http = httpProtocol.createServer(app);
+const port = config.server.port[0].number;
 
-http.listen(config.PORT, () => {
-  console.log(`Running on port ${config.PORT}`);
+http.listen(port, () => {
+  console.log(`Running on port ${port}`);
 });
