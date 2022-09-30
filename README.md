@@ -2,7 +2,8 @@
 
 # Description
 
-Backend server built with Express and MongoDB designed to work with the frontend application [TP_POE_Frontend](https://github.com/Alain-RAMBELOSON/TP_POE_Frontend).
+Database server built with Express with a connector which links to a MongoDB Cloud database.  
+This server is designed to work with the frontend application [TP_POE_Frontend](https://github.com/Alain-RAMBELOSON/TP_POE_Frontend).
 
 # Context
 
@@ -32,8 +33,10 @@ The technologies used are up to the student.
 
 # Personal goals
 
+- Think systems first not features
 - Reusable, maintainable, extensible and intelligible folder and file architecture
 - Set some constructs to allow multi database connection 
+- Use at least one thechnology that I never used before  
 
 # Usage
 
