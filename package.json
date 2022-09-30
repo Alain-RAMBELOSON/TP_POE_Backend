@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/Alain-RAMBELOSON/TP_POE_Backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "mongoose": "^6.6.2",
