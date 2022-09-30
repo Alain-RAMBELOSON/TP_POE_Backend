@@ -6,7 +6,7 @@ module.exports.getVehicles = async (request: Request, response: Response) => {
   try {
     const vehicles = await Vehicle.find({});
     response.send(vehicles);
-  } catch {
-    response.status(404).send("Vehicles not found");
+  } catch (error) {
+    response.status(500).send(error);
   }
 };

@@ -10,7 +10,7 @@ module.exports.getVehicleByID = async (
     const vehicleID = request.params.id;
     const vehicle = await Vehicle.findById(vehicleID);
     response.send(vehicle);
-  } catch {
-    response.status(404).send("Vehicle not found");
+  } catch (error) {
+    response.status(500).send(error);
   }
 };
