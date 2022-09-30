@@ -5,8 +5,6 @@
 Assessment for [M2i Formation](https://www.m2iformation.fr/).  
 Wording provided by [Semifir](https://fr.linkedin.com/company/semifir).  
 
-### Requirements
-
 The goal is to develop a web application from scratch for a fictive car renting company in a week.  
 The technologies used are up to the student.
 
@@ -16,6 +14,17 @@ The technologies used are up to the student.
 - Record a start and end date for the rent
 - Create a rent
 - Allow the listing, editing and deletion of the vehicles, customers and rents
+
+### [M2i Formation](https://www.m2iformation.fr/) training program
+
+6 months on site studying the following :
+
+**Fundamentals** : algorithmic, software architecture, unit Test and TDD, Scrum and Agile  
+**Languages** : HTML, CSS, JavaScript, TypeScript, SQL  
+**Frameworks** : NodeJS, Express, Angular, React, VueJS  
+**Databases** : MySQL, MongoDB  
+**Cloud** : AWS  
+**DevTools** : Git
 
 # Personal goals
 
