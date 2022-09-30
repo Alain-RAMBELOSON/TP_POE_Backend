@@ -6,21 +6,19 @@ module.exports.updateRentByID = async (
   request: Request,
   response: Response
 ) => {
-  const rentID = request.params.id;
+  try {
+    const rentID = request.params.id;
 
-  const update = {
-    customerID: request.body.customerID,
-    vehicleID: request.body.vehicleID,
-    start: request.body.start,
-    end: request.body.end,
-    price: request.body.price,
-  };
+    const update = {
+      customerID: request.body.customerID,
+      vehicleID: request.body.vehicleID,
+      start: request.body.start,
+      end: request.body.end,
+      price: request.body.price,
+    };
 
-  const rent = await Rent.findByIdAndUpdate(rentID, update, { new: true });
-
-  if (rent) {
-    response.json(rent);
-  } else {
-    response.status(400);
+    await Rent.findByIdAndUpdate(rentID, update, { new: true });
+  } catch (error) {
+    response.status(500).send(error);
   }
 };

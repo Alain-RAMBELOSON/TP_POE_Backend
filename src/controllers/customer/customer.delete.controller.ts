@@ -6,8 +6,12 @@ module.exports.deleteCustomerByID = async (
   request: Request,
   response: Response
 ) => {
-  const customerID = request.params.id;
-  const customer = await Customer.findById(customerID);
-  await Customer.findByIdAndRemove(customerID);
-  response.send(`Customer deleted : ${customer}`);
+  try {
+    const customerID = request.params.id;
+    const customer = await Customer.findById(customerID);
+    await Customer.findByIdAndRemove(customerID);
+    response.send(`Customer deleted : ${customer}`);
+  } catch (error) {
+    response.status(500).send(error);
+  }
 };
