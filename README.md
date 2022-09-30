@@ -19,7 +19,8 @@ The technologies used are up to the student.
 
 # Personal goals
 
-- Reusable, maintainable, extensible and intelligible backend folder and file architecture
+- Reusable, maintainable, extensible and intelligible folder and file architecture
+- Set some constructs to allow multi database connection 
 
 # Description
 
