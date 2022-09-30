@@ -77,20 +77,30 @@ http://localhost:3001/api/vehicle/4334efb3d817s5ab8fe4bc28
 
 ### Create a record  
 Use the POST method from  
-`http://localhost:3001/api/<TableName>`
+```
+http://localhost:3001/api/<TableName>
+```
 
 ### Get all records
-Use the GET method from   
-`http://localhost:3001/api/<TableName>`
+Use the GET method from
+```
+http://localhost:3001/api/<TableName>
+```
 
 ### Get a record by ID
 Use the GET method from  
-`http://localhost:3001/api/<TableName>/:id`
+```
+http://localhost:3001/api/<TableName>/:id
+```
 
 ### Update a record by ID
 Use the PUT method from  
-`http://localhost:3001/api/<TableName>/:id`
+```
+http://localhost:3001/api/<TableName>/:id
+```
 
 ### Delete a record by ID
-Use the DELETE method from  
-`http://localhost:3001/api/<TableName>/:id`
+Use the DELETE method from 
+```
+http://localhost:3001/api/<TableName>/:id
+```
