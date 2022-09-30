@@ -1,5 +1,9 @@
 # TP_POE_Backend
 
+# Description
+
+Backend server built with Express and MongoDB designed to work with the frontend application [TP_POE_Frontend](https://github.com/Alain-RAMBELOSON/TP_POE_Frontend).
+
 # Context
 
 Assessment for [M2i Formation](https://www.m2iformation.fr/).  
@@ -30,10 +34,6 @@ The technologies used are up to the student.
 
 - Reusable, maintainable, extensible and intelligible folder and file architecture
 - Set some constructs to allow multi database connection 
-
-# Description
-
-Backend server built with Express and MongoDB designed to work with the frontend application [TP_POE_Frontend](https://github.com/Alain-RAMBELOSON/TP_POE_Frontend).
 
 # Usage
 
