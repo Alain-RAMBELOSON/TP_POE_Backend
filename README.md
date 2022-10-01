@@ -56,9 +56,14 @@ npm start
 
 ### For developers
 
-- Run the `npm run dev` command at the root of the repository to get live updates on file changes
-- With [Visual Studio Code](https://code.visualstudio.com/download) and the [Rest client](https://github.com/Huachao/vscode-restclient) extension you can launch requests to the database.  
-Open the `requests` folder, open a `*.rest` file and click on the `Send request` command which appears at the top left corner of the displayed document. 
+To get live updates on file changes, open a terminal at the root of this repository and run the follwing command
+```
+npm run dev
+```
+\
+With [Visual Studio Code](https://code.visualstudio.com/download) and the [Rest client](https://github.com/Huachao/vscode-restclient) extension you can send requests to the database :   
+- Open the `requests` folder
+- Open a `*.rest` file and click on the `Send request` command which appears at the top left corner of the displayed document. 
 
 ### Run the frontend application
 
