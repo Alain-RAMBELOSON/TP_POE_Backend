@@ -1,5 +1,14 @@
 # TP_POE_Backend
 
+# Summary
+
+- [Description](https://github.com/Alain-RAMBELOSON/TP_POE_Backend/blob/main/README.md#description)
+- [Context](https://github.com/Alain-RAMBELOSON/TP_POE_Backend/blob/main/README.md#context)
+- [Personal goals](https://github.com/Alain-RAMBELOSON/TP_POE_Backend/blob/main/README.md#personal-goals)
+- [Usage](https://github.com/Alain-RAMBELOSON/TP_POE_Backend/blob/main/README.md#usage)
+- [API](https://github.com/Alain-RAMBELOSON/TP_POE_Backend/blob/main/README.md#api)
+- [Routes](https://github.com/Alain-RAMBELOSON/TP_POE_Backend/blob/main/README.md#routes)
+
 # Description
 
 Backend server built with ExpressJS connected to a MongoDB Cloud database.  
