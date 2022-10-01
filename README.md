@@ -2,7 +2,7 @@
 
 # Description
 
-Database server built with Express with a connector which links to a MongoDB Cloud database.  
+Backend server built with ExpressJS connected to a MongoDB Cloud database.  
 This server is designed to work with the frontend application [TP_POE_Frontend](https://github.com/Alain-RAMBELOSON/TP_POE_Frontend).
 
 # Context
@@ -43,10 +43,16 @@ The technologies used are up to the student.
 ### Run the backend server
 
 - Download or clone this repository
-- Open a terminal at the root of this repository  
-- Run the `npm i` command  
-- Get the `.env` file from the repository owner and put it into the `./src` folder 
-- Run the `npm start` command
+- Get the `.env` file from the repository owner and place it it into the `./src` folder 
+- Open a terminal at the root of this repository 
+- Run the next command to install all the dependencies 
+```
+npm i
+```
+Run the next command to run the application
+```
+npm start
+```
 
 ### For developers
 
