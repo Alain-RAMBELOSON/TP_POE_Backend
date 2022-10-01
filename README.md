@@ -42,10 +42,10 @@ The technologies used are up to the student.
 
 # Personal goals
 
-- Think systems first not features
+- Think systems first, not features
 - Reusable, maintainable, extensible and intelligible folder and file architecture
 - Set some constructs to allow multi database connection 
-- Use at least one technology that I never used before  
+- Use at least one technology that I never used before
 
 # Usage
 
