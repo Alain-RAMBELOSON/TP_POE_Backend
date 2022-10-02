@@ -41,10 +41,16 @@ The technologies used are up to the student.
 
 # Personal goals
 
-- Think systems first, not features
-- Reusable, maintainable, extensible and intelligible folder and file architecture
-- Set some constructs to allow multi database connection 
-- Use at least one technology that I never used before
+- Focus on building systems instead of building features
+- Apply clear semantic in folders and files architechure
+- Focus on code readability
+- Focus on code consistency
+- Focus on code extensibility
+- Focus on code maintainability
+- Improve understanding and usage of data types
+- Improve understanding and usage of TypeScript
+- Improve understanding and usage of JavaScript modules
+- Use at least one technology never used before
 
 # Usage
 
