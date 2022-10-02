@@ -59,11 +59,11 @@ The technologies used are up to the student.
 - Download or clone this repository
 - Get the `.env` file from the repository owner and place it it into the `./src` folder 
 - Open a terminal at the root of this repository 
-- Run the next command to install all the dependencies 
+- Use the next command to install all the dependencies (may require an IDE/Text editor restart) 
 ```
 npm i
 ```
-Run the next command to run the application
+Use the next command to start the application
 ```
 npm start
 ```
